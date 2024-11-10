@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
+}
+
+@layer base {
+  input, textarea {
+    @apply border-gray-300 focus:ring-gray-500 focus:border-gray-500;
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply py-16 sm:py-20;
+  }
+}
+
+@media (max-width: 640px) {
+  .font-serif {
+    font-size: 90%;
+    line-height: 1.2;
+  }
+}
